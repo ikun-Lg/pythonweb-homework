@@ -69,7 +69,7 @@ export default function PreferencesPage() {
       }
 
       // 获取用户当前喜欢的类型
-      const likeRes = await getLikeList({
+      const likeRes:any = await getLikeList({
         current: 1,
         pageSize: 100,
         userId: userInfo.userId,
