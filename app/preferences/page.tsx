@@ -24,7 +24,7 @@ export default function PreferencesPage() {
       try {
         setIsLoading(true);
         // 获取所有电影类型
-        const genreRes = await getGenreList();
+        const genreRes:any = await getGenreList();
         if (genreRes.code === 0) {
           setGenres(genreRes.data);
         }
