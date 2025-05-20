@@ -32,7 +32,7 @@ export default function PreferencesPage() {
         // 获取用户已选择的类型
         const userInfo = JSON.parse(localStorage.getItem('userInfo') || '{}');
         if (userInfo.userId) {
-          const likeRes = await getLikeList({
+          const likeRes:any = await getLikeList({
             current: 1,
             pageSize: 100,
             userId: userInfo.userId,
